@@ -15,7 +15,7 @@ export function parseEvaluationResultFromGenericDebugAdapter(
 	| { kind: "data"; result: DataExtractionResult }
 	| { kind: "error"; message: FormattedMessage } {
 	const jsonData = resultText.trim();
-
+	// 什么 1
 	let resultObj;
 	try {
 		try {

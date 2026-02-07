@@ -190,6 +190,7 @@ export class Model {
 	refresh() {
 		if (this.server) {
 			this.server.refresh();
+			console.log("???");
 		}
 	}
 

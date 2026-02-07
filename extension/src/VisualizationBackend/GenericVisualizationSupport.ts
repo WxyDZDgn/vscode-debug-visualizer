@@ -57,6 +57,7 @@ export class GenericVisualizationBackend extends VisualizationBackendBase {
 		});
 		let reply: { result: string; variablesReference: number };
 		try {
+		// 什么2
 			reply = await this.debugSession.evaluate({
 				expression: finalExpression,
 				frameId,

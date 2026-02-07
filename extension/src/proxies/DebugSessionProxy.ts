@@ -86,6 +86,7 @@ export class DebugSessionProxy {
 		frameId: number | undefined;
 		context: "watch" | "repl" | "copy";
 	}): Promise<{ result: string; variablesReference: number }> {
+		// 什么3?
 		const reply = await this.session.customRequest("evaluate", {
 			expression: args.expression,
 			frameId: args.frameId,
